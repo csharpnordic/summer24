@@ -48,6 +48,7 @@
             button1.TabIndex = 0;
             button1.Text = "1";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button_Click;
             // 
             // button2
             // 
@@ -56,7 +57,9 @@
             button2.Name = "button2";
             button2.Size = new Size(128, 128);
             button2.TabIndex = 0;
+            button2.Text = "2";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button_Click;
             // 
             // button3
             // 
@@ -65,7 +68,9 @@
             button3.Name = "button3";
             button3.Size = new Size(128, 128);
             button3.TabIndex = 0;
+            button3.Text = "3";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button_Click;
             // 
             // button4
             // 
@@ -74,7 +79,9 @@
             button4.Name = "button4";
             button4.Size = new Size(128, 128);
             button4.TabIndex = 0;
+            button4.Text = "4";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button_Click;
             // 
             // button5
             // 
@@ -83,7 +90,9 @@
             button5.Name = "button5";
             button5.Size = new Size(128, 128);
             button5.TabIndex = 0;
+            button5.Text = "5";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button_Click;
             // 
             // button6
             // 
@@ -92,8 +101,9 @@
             button6.Name = "button6";
             button6.Size = new Size(128, 128);
             button6.TabIndex = 0;
-            button6.Text = "3";
+            button6.Text = "6";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button_Click;
             // 
             // button7
             // 
@@ -102,7 +112,9 @@
             button7.Name = "button7";
             button7.Size = new Size(128, 128);
             button7.TabIndex = 0;
+            button7.Text = "7";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button_Click;
             // 
             // button8
             // 
@@ -111,8 +123,9 @@
             button8.Name = "button8";
             button8.Size = new Size(128, 128);
             button8.TabIndex = 0;
-            button8.Text = "2";
+            button8.Text = "8";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button_Click;
             // 
             // button9
             // 
@@ -121,9 +134,11 @@
             button9.Name = "button9";
             button9.Size = new Size(128, 128);
             button9.TabIndex = 0;
+            button9.Text = "9";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button_Click;
             // 
-            // Form1
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -138,7 +153,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Name = "Form1";
+            Name = "MainForm";
             Text = "Form1";
             ResumeLayout(false);
         }
