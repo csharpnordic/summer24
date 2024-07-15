@@ -10,12 +10,14 @@ namespace FirstApp
         /// <summary>
         /// Обработчик нажатия на кнопку
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Источник события</param>
+        /// <param name="e">Параметры события</param>
         private void button_Click(object sender, EventArgs e)
         {
+            // Приведение типа к кнопке
+            Button button = (Button)sender;
             // преобразование строки в число
-            int n = int.Parse(button2.Text);
+            int n = int.Parse(button.Text);
             // увеличение числа
             n = n + 1;
             // если число больше, чем 9
@@ -24,7 +26,7 @@ namespace FirstApp
                 n = 1; // вернёмся к единице
             }
             // преобразуем число обратно в строку
-            button2.Text = n.ToString();
+            button.Text = n.ToString();
         }       
     }
 }
