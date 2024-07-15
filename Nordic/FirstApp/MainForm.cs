@@ -27,6 +27,29 @@ namespace FirstApp
             }
             // преобразуем число обратно в строку
             button.Text = n.ToString();
-        }       
+
+            // Покрасить все кнопки в единый серый цвет
+            foreach (Button b1 in Controls)
+            {
+                b1.BackColor = Color.Gray;
+            }
+
+            // Перебор всех кнопок
+            foreach (Button b1 in Controls)
+            {
+                // Для каждой кнопки перебираем все остальные кнопки
+                foreach (Button b2 in Controls)
+                {
+                    // Не надо проверять кнопку с ней же самой
+                    if (b1 == b2) continue;
+
+                    // Если текст на кнопках совпадает, перекрасим вторую кнопку
+                    if (b1.Text == b2.Text)
+                    {
+                        b2.BackColor = Color.Coral;
+                    }
+                }
+            }
+        }
     }
 }
